@@ -1,0 +1,123 @@
+.about-section {
+  padding: var(--space-8) 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-2);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-secondary);
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-7);
+}
+
+.about-image-container {
+  position: relative;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-heading {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-3);
+  color: var(--text-primary);
+}
+
+.about-text p {
+  margin-bottom: var(--space-3);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.about-timeline-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+}
+
+.timeline-heading {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-primary);
+}
+
+.timeline-heading svg {
+  color: var(--color-primary);
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-timeline-section {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .about-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}

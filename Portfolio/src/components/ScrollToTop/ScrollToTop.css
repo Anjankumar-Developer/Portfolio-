@@ -1,0 +1,33 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: var(--space-4);
+  right: var(--space-4);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--shadow-md);
+  z-index: var(--z-elevated);
+  opacity: 0.8;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    width: 36px;
+    height: 36px;
+    bottom: var(--space-3);
+    right: var(--space-3);
+  }
+}

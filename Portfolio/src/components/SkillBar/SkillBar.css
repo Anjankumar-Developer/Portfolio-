@@ -1,0 +1,51 @@
+.skill-bar {
+  margin-bottom: var(--space-3);
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-1);
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  margin-right: var(--space-2);
+  color: var(--color-primary);
+}
+
+.skill-name {
+  font-weight: 500;
+  flex-grow: 1;
+  color: var(--text-primary);
+}
+
+.skill-level {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+}
+
+.skill-progress {
+  height: 8px;
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  border-radius: var(--radius-full);
+  transition: width 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .skill-info {
+    font-size: 0.875rem;
+  }
+  
+  .skill-progress {
+    height: 6px;
+  }
+}
