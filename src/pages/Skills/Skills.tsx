@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { Monitor, Server, PenTool as Tool } from 'lucide-react';
+import { Monitor, Server, PenTool as Tool, MessageSquare } from 'lucide-react';
 import SkillBar from '../../components/SkillBar/SkillBar';
-import { frontendSkills, backendSkills, toolsSkills,aimlskills } from '../../data/skills';
+import { frontendSkills, backendSkills, toolsSkills, aimlskills, communicationSkills } from '../../data/skills';
 import './Skills.css';
 
 const Skills: React.FC = () => {
@@ -34,6 +34,12 @@ const Skills: React.FC = () => {
       title: 'Tools & Technologies',
       icon: <Tool size={24} />,
       skills: toolsSkills
+    },
+    {
+      id: 'communication',
+      title: 'Communication & Soft Skills',
+      icon: <MessageSquare size={24} />,
+      skills: communicationSkills
     }
   ];
 

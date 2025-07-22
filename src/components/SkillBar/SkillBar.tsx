@@ -12,23 +12,13 @@ interface SkillBarProps {
 }
 
 const SkillBar: React.FC<SkillBarProps> = ({ skill }) => {
-  const { name, level, icon } = skill;
+  const { name, icon } = skill;
 
   return (
-    <div className="skill-bar">
-      <div className="skill-info">
+    <div className="skill-item">
+      <div className="skill-content">
         {icon && <span className="skill-icon">{icon}</span>}
         <span className="skill-name">{name}</span>
-        <span className="skill-level">{level}%</span>
-      </div>
-      <div className="skill-progress">
-        <div 
-          className="skill-progress-bar" 
-          style={{ width: `${level}%` }}
-          aria-valuenow={level}
-          aria-valuemin={0}
-          aria-valuemax={100}
-        ></div>
       </div>
     </div>
   );

@@ -42,3 +42,14 @@ export const aimlskills: SkillType[] = [
   { name: 'Machine Learning', level: 85, icon: null },
   { name: 'Data Analysis', level: 90, icon: null },
 ];
+
+export const communicationSkills: SkillType[] = [
+  { name: 'Technical Writing', level: 85, icon: null },
+  { name: 'Public Speaking', level: 80, icon: null },
+  { name: 'Team Collaboration', level: 90, icon: null },
+  { name: 'Client Communication', level: 85, icon: null },
+  { name: 'Documentation', level: 90, icon: null },
+  { name: 'Presentation Skills', level: 80, icon: null },
+  { name: 'Code Reviews', level: 85, icon: null },
+  { name: 'Requirements Gathering', level: 80, icon: null },
+];
