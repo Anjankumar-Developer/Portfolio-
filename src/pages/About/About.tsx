@@ -20,14 +20,6 @@ const About: React.FC = () => {
         </header>
 
         <div className="about-content">
-          <div className="about-image">
-            <img 
-              src="/images/profile.jpg" 
-              alt="T.Sai Anjan Kumar" 
-              className="profile-picture"
-            />
-          </div>
-
           <div className="about-text">
             <h2 className="about-heading">Who I Am</h2>
             <p>
@@ -58,8 +50,6 @@ const About: React.FC = () => {
         </div>
 
         <div className="about-timeline-section">
-
-
           <div className="timeline-column">
             <h2 className="timeline-heading">
               <GraduationCap size={24} />

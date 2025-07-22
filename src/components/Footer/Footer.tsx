@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="container footer-container">
         <div className="footer-content">
           <div className="footer-info">
-            <Link to="/" className="footer-logo">Portfolio</Link>
+            <Link to="/" className="footer-logo">My Portfolio</Link>
             <p className="footer-tagline">Building digital experiences with passion and precision.</p>
           </div>
 
@@ -47,13 +47,12 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-bottom">
-          <p className="copyright">© {currentYear}T. Sai Anjan Kumar. All rights reserved.</p>
+          <p className="copyright">© {currentYear} T. Sai Anjan Kumar. All rights reserved.</p>
           <button 
             className="back-to-top"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             aria-label="Back to top"
           >
-            Back to top
           </button>
         </div>
       </div>
