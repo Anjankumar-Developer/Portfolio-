@@ -175,6 +175,11 @@ img {
   padding-bottom: var(--space-6);
 }
 
+/* Main content spacing from navbar */
+main {
+  padding-top: var(--space-4);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

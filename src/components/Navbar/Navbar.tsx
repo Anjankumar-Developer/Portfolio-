@@ -1,5 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import './Navbar.css';
@@ -7,7 +6,6 @@ import './Navbar.css';
 const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -17,25 +15,12 @@ const Navbar: React.FC = () => {
     if (menuOpen) setMenuOpen(false);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <header className="navbar">
       <div className="container navbar-container">
-        <NavLink to="/" className="navbar-logo" onClick={closeMenu}>
+        <a href="#home" className="navbar-logo" onClick={closeMenu}>
           <span>Portfolio</span>
-        </NavLink>
+        </a>
 
         <button 
           className="mobile-menu-button" 
@@ -49,19 +34,19 @@ const Navbar: React.FC = () => {
         <nav className={`navbar-menu ${menuOpen ? 'active' : ''}`}>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Home</NavLink>
+              <a href="#home" onClick={closeMenu}>Home</a>
             </li>
             <li className="nav-item">
-              <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>About</NavLink>
+              <a href="#about" onClick={closeMenu}>About</a>
             </li>
             <li className="nav-item">
-              <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Projects</NavLink>
+              <a href="#projects" onClick={closeMenu}>Projects</a>
             </li>
             <li className="nav-item">
-              <NavLink to="/skills" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Skills</NavLink>
+              <a href="#skills" onClick={closeMenu}>Skills</a>
             </li>
             <li className="nav-item">
-              <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>Contact</NavLink>
+              <a href="#contact" onClick={closeMenu}>Contact</a>
             </li>
           </ul>
 
