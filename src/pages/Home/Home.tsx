@@ -28,7 +28,7 @@ const Home: React.FC = () => {
       <div className="container home-container">
         <div className="hero-content">
           <h1 ref={headingRef} className="hero-title">
-            Hi, I'm <span className="highlight">T.Sai Anjan Kumar</span><br />
+            Hi, I'm <span className="highlight">Sai Anjan Kumar Tanneeru</span><br />
             I am a Full Stack Developer & AI/ML Engineer
           </h1>
           
@@ -45,7 +45,12 @@ const Home: React.FC = () => {
               </Button>
             </Link>
             
-            <a href="/dummy-resume.pdf" download="resume.pdf">
+            <a 
+              href="https://www.dropbox.com/scl/fi/s4tlctmty0w82vqfcrmqo/SaiAnjanKumarTanneeruResume-1.pdf?rlkey=baxqv8dwu0g6ksayxxa950mbr&st=wadajpdy&dl=0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              download="T_Sai_Anjan_Kumar_Resume.pdf"
+            >
               <Button variant="outline" icon={<Download size={18} />}>
                 Download Resume
               </Button>
