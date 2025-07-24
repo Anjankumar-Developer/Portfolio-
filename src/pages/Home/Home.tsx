@@ -111,7 +111,7 @@ const Home: React.FC = () => {
               </a>
               
               <a 
-                href="https://www.dropbox.com/scl/fi/s4tlctmty0w82vqfcrmqo/SaiAnjanKumarTanneeruResume-1.pdf?rlkey=baxqv8dwu0g6ksayxxa950mbr&st=wadajpdy&dl=0" 
+                href="https://www.dropbox.com/scl/fi/a2c7tkh41y6u64iz59d1v/My_resume.pdf?rlkey=bzzsw3fuuayqkpm2lp3irauc7&st=jdpnacmk&dl=0" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 download="T_Sai_Anjan_Kumar_Resume.pdf"
